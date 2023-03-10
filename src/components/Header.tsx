@@ -8,14 +8,14 @@ const Header = () => {
 
   return (
     <div className="relative ">
-      <div className="absolute container-fluid min-h-full bg-gradient-to-r from-zinc-900 ">
+      <div className="absolute container-fluid min-h-full bg-gradient-to-r from-zinc-900 pt-2">
         <div className="d-flex justify-content-between ">
           <img
             src={logoNetflix}
             alt=""
             className="col-2 my-auto h-5 col-sm-4 sm:h-10 sm:w-32 "
           />
-          <div className="d-flex justify-content-between col-7 col-sm-4 col-md-3">
+          <div className="d-flex justify-content-between col-6 col-sm-4 col-md-3 col-lg-2">
             <div className="my-auto">
               <DropdownCommon
                 title={"Langue"}
@@ -23,14 +23,16 @@ const Header = () => {
                 itemSecond={"Anglais"}
                 pathFirstItem={""}
                 pathSecondItem={""}
+                size={"sm"}
+                classNameContainer=" "
               />
             </div>
 
             <button
               type="button"
-              className="btn  btn-sm  bg-red-700 text-white"
+              className="btn btn-login text-sm  bg-red-700 hover:bg-red-800 text-white "
             >
-              Small button
+              S'identifier
             </button>
           </div>
         </div>
