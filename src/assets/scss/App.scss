@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./components/header";
+.bg-img{
+    background-color: black;
+    height: 20%;
+}
