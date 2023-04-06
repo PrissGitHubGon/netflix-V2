@@ -1,19 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./assets/scss/App.scss";
-import Header from "./components/Header";
+import Layout from "./views/Layout";
 
 function App() {
   return (
     <BrowserRouter>
-      {/* Ternaire qui permet de ne pas afficher le header et le footer sur la page d'accueil */}
-      {/* {window.location.pathname !== "/" ? <Header /> : null} */}
-      <Header />
-
+      <Layout />
       <Routes>
         <Route path="/" element="" />
       </Routes>
-      {/* {window.location.pathname !== "/" ? <Footer /> : null} */}
-      {/* <Footer /> */}
     </BrowserRouter>
   );
 }

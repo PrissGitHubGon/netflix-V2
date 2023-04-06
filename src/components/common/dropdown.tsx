@@ -17,6 +17,8 @@ interface DropdownItemProps {
   pathFirstItem: string;
   pathSecondItem: string;
   classNameContainer: string;
+  onFirstLangClick: any;
+  onSecondLangClick: any;
 }
 
 const DropdownCommon = ({
@@ -27,6 +29,8 @@ const DropdownCommon = ({
   pathSecondItem,
   size,
   classNameContainer,
+  onFirstLangClick,
+  onSecondLangClick,
 }: DropdownItemProps) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -42,11 +46,11 @@ const DropdownCommon = ({
         <Icon icon={faGlobe} /> {title}
       </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem>
+        <DropdownItem onClick={onFirstLangClick}>
           {" "}
           <Link to={pathFirstItem}>{itemFirst}</Link>{" "}
         </DropdownItem>
-        <DropdownItem>
+        <DropdownItem onClick={onSecondLangClick}>
           <Link to={pathSecondItem}>{itemSecond}</Link>{" "}
         </DropdownItem>
       </DropdownMenu>
