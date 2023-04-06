@@ -6,6 +6,8 @@ import {
 } from "react-localize-alias";
 import { useEffect } from "react";
 import translations from "../Translate";
+import Icon from "./common/icon";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   useEffect(() => {
@@ -32,7 +34,7 @@ const Header = () => {
   return (
     <div className="relative ">
       <div className="absolute container-fluid min-h-full bg-gradient-to-r from-zinc-900 pt-2 ">
-        <div className="container md:px-20 d-flex justify-content-center justify-content-between ">
+        <div className="container md:px-20 d-flex justify-content-center justify-content-between mt-3 ">
           <img
             src={logoNetflix}
             alt=""
@@ -73,6 +75,25 @@ const Header = () => {
             <p className="text-light text-sm sm:text-base md:text-lg lg:text-xl font-bold">
               <Translate id="thirdHeaderTitle" />
             </p>
+          </div>
+        </div>
+        <div className="mt-6 container d-flex justify-content-center text-center">
+          <div className="form-floating mb-3 mx-2 d-flex col-6">
+            <input
+              type="email"
+              className="form-control bg-transparent "
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label htmlFor="floatingInput" className=" text-light">
+              Address e-mail{" "}
+            </label>{" "}
+            <button
+              type="button"
+              className="btn btn-login text-2xl font-bold  bg-red-700 hover:bg-red-800 text-white  col-4 mx-2"
+            >
+              Commencer <Icon icon={faChevronRight} />
+            </button>
           </div>
         </div>
       </div>

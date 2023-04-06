@@ -4,7 +4,11 @@ const iconsRegular = require("@fortawesome/free-regular-svg-icons");
 /**
  * Add all icons used in project.
  */
-const IconsList = [iconsRegular.faTrashCan, icons.faGlobe];
+const IconsList = [
+  iconsRegular.faTrashCan,
+  icons.faGlobe,
+  icons.faChevronRight,
+];
 
 require("@fortawesome/fontawesome-svg-core").library.add(IconsList);
 
