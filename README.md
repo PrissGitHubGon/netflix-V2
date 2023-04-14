@@ -1,3 +1,2 @@
 # Projet en cours ...
 
-https://netflix-project-v2.netlify.app
